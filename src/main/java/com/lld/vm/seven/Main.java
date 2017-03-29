@@ -6,10 +6,13 @@ package com.lld.vm.seven;
  */
 public class Main {
 
+    public static int i = 1;
     static {
-        System.out.println("main");
+        i = 0;
+        System.out.println(i);
     }
 
+    
     public static Byte[] getBytes(int size) {
         return new Byte[size * 1024 * 1024];
     }
@@ -20,13 +23,13 @@ public class Main {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        int i = 0;
-        while (true) {
-//            Thread.sleep(500);
-            VM vm1 = new VM();
-            VM vm2 = new VM();
-            VM vm3 = new VM();
-//            System.out.println("1111");
-        }
+//        int i = 0;
+//        while (true) {
+////            Thread.sleep(500);
+//            VM vm1 = new VM();
+//            VM vm2 = new VM();
+//            VM vm3 = new VM();
+////            System.out.println("1111");
+//        }
     }
 }
